@@ -36,12 +36,8 @@ var Map = function(container, coords, zoom) {
     });
   }
 
-  // this.moveToLocation = function(map, latLng) {
-  //   setCenter(latLng);
-  // }
-
-  // this.handleButtonClick = function(latLng) {
-  //   this.setCenter(latLng);
-  // }
+  this.moveToLocation = function(latLng) {
+    this.googleMap.setCenter(latLng);
+  }
 
 }

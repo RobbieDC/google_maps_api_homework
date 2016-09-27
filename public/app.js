@@ -10,7 +10,10 @@ var initialize = function() {
   map.addListenerForInfoWindow(infoWindow, codeClan);
 
   var button = createAndAddButton();
-  button.onclick = map.setCenter(new google.maps.LatLng(57.477773, -4.224721));
+  var handleClick = function() {
+    map.googleMap.setCenter( new google.maps.LatLng(57.477773, -4.224721) );
+  }
+  button.onclick = handleClick;
 }
 
 var createAndAddButton = function() {
